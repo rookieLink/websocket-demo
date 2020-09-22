@@ -19,6 +19,7 @@ module.exports = {
     'no-redeclare': 'off',
     'no-constant-condition': 'off',
     'no-mixed-spaces-and-tabs': 'off',
-    'no-unused-components': 'off'
+    'no-unused-components': 'off',
+    'no-cond-assign': 'off'
   }
 }

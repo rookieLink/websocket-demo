@@ -3,9 +3,10 @@ export function createWebsocket(url, callback) {
 
   console.log('创建连接')
 
-  ws.onopen = function() {
+  ws.onopen = function(e) {
     console.log('WebSocket is open now.');
-    ws.send('message8080');
+    console.log('open回包', e)
+    ws.send('fetch conn_id');
   }
 
   ws.onmessage = function(e) {
