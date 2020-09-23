@@ -20,6 +20,8 @@ module.exports = {
     'no-constant-condition': 'off',
     'no-mixed-spaces-and-tabs': 'off',
     'no-unused-components': 'off',
-    'no-cond-assign': 'off'
+    'no-cond-assign': 'off',
+    'no-unsafe-negation': 'off',
+    'no-empty': 'off'
   }
 }

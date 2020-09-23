@@ -38,10 +38,14 @@ const routes = [
 
   {
     path: '/web/picture-result',
-    name: 'MobileTest',
+    name: 'WebPicture',
     component: () => import('./../views/web/ai-picture/PictureResult.vue')
   },
-
+  {
+    path: '/camera',
+    name: 'Camera',
+    component: () => import('./../views/camera/camera.vue')
+  },
   // 手机端
   // { 
   //   path: 'mobile', 
@@ -62,7 +66,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

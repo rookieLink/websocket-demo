@@ -56,7 +56,7 @@
   <div class="picture-container">
     <h3>AI识包</h3>
     <div class="add-picture">
-      <input type="file" accept="image/*" class="camera" @change="uploadImage($event)"/>
+      <input type="file" accept="image/*" class="camera" @change="uploadImage($event)" capture="camera"/>
       <h1 v-if="!imageUrl">点我上传
       
       </h1>
@@ -74,7 +74,6 @@ import getBase64 from './../../share/img2Base64'
 import {createWebsocket} from './../../share/websocket'
 import parseUrl from './../../share/parseUrl.js';
 
-console.log
 export default {
   data() {
     return {
